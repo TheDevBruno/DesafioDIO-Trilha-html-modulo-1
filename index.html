@@ -1,62 +1,335 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página - Módulo I - Primeiros Passos com HTML</title>
 </head>
+
 <body>
-    <h1>Módulo 1 - Primeiros Passos com HTML</h1>
+   <h1>Módulo 1 - Primeiros Passos com HTML</h1>
     <hr />
-
-    <h2>Índice</h2>
+    <h2 id="Índice">Índice</h2>
     <p><strong><u>INSTRUÇÕES:</u> </strong>Neste índice você deve colocar os tópicos que mais entendeu. Estes apenas são sugestões.</p>
-    <ul>
-        <li><a href="#">História dos computadores</a></li>
-        <li><a href="#">O que são <i>Clients</i>?</a></li>
-        <li><a href="#">O que são <i>Servers</i>?</a></li>
-        <li><a href="#">Como é uma estrutura básica de um HTML?</a></li>
-        <li><a href="#">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
-        <li><a href="#">Links de referências</a></li>
-    </ul>
 
-    <h2>História dos computadores</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+    <dl> 
+      <ul>
+         <li><a href="#História">História dos computadores</a></li>
+         <li><a href="#Clients">O que são <i>Clients</i>?</a></li>
+         <li><a href="#Servers">O que são <i>Servers</i>?</a></li>
+         <li><a href="#BasicStructuresHTML">Como é uma estrutura básica de um HTML?</a></li>
+         <li><a href="#DifferencesLists">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
+         <li><a href="#References">Links de referências</a></li>
+      </ul>
+   </dl>
+      
+   <h2 id="História">História dos computadores</h2>
+      <p>O computador é um aparelho eletrônico capaz de receber, armazenar e processar informações de forma automática.
+         O termo "computador" vem do verbo "computar", que significa "calcular".
+         A origem dos computadores está relacionada com a necessidade de realizar cálculos complexos e rápidos,
+         que não podiam ser feitos manualmente ou com instrumentos simples.
+      </p>
 
-    <h2>O que são <i>Clients</i>?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+      <h3>Primeiras Máquinas de Calcular</h3>
+         <p>Uma das primeiras máquinas de calcular foi o <strong>ábaco</strong>, um instrumento mecânico de origem chinesa,
+            criado no século V a.C. O ábaco consistia em uma estrutura de madeira com varetas e contas,
+            que podiam ser movidas para realizar operações aritméticas. O ábaco é considerado o "primeiro computador" da história,
+            pois permitia armazenar e manipular números de forma sistemática.
+         </p>
+         
+         <p>No século XVII, surgiram as primeiras <strong>calculadoras mecânicas</strong>, que eram dispositivos movidos por engrenagens, 
+            alavancas e rodas, que podiam efetuar cálculos básicos, como soma, subtração, multiplicação e divisão.
+            Um dos pioneiros nesse campo foi o matemático francês <strong>Blaise Pascal</strong>, que inventou a <em>Pascalina</em>,
+            uma máquina de calcular automática, que usava rodas dentadas para representar os dígitos.
+            Outro matemático que se destacou foi o alemão <strong>Gottfried Wilhelm Leibniz</strong>, que aperfeiçoou a Pascalina e criou
+            a <em>Roda de Leibniz</em>, que podia calcular raízes quadradas e usar o sistema binário, que é a base da informática moderna.
+         </p>
 
-    <h2>O que são <i>Servers</i>?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+      <h3>Máquinas Analíticas e Programáveis</h3>
+         <p>No século XIX, o matemático inglês <strong>Charles Babbage</strong> projetou uma máquina que seria capaz de realizar cálculos
+            complexos e variados, usando cartões perfurados para armazenar e processar dados. Essa máquina ficou conhecida como 
+            <strong>Máquina Analítica</strong>, e é considerada o protótipo do computador atual, pois possuía componentes como memória,
+            processador e entrada e saída de dados. Babbage é chamado de "Pai da Informática" por sua visão inovadora.</p>
+         <p>Um dos colaboradores de Babbage foi a matemática inglesa <strong>Ada Lovelace</strong>, que escreveu o primeiro algoritmo para 
+            ser executado pela Máquina Analítica. Ada Lovelace é considerada a "Primeira Programadora" da história, pois criou uma sequência 
+            de instruções lógicas para resolver um problema matemático.
+         </p>
+         <p>Outro avanço importante foi o <strong>tear de Jacquard</strong>, inventado pelo francês <strong>Joseph-Marie Jacquard</strong> 
+            em 1801. Esse tear usava cartões perfurados para controlar a confecção de tecidos com padrões complexos. 
+            O tear de Jacquard foi uma das primeiras máquinas programáveis da história, pois podia alterar sua função de acordo com os 
+            cartões inseridos.
+         </p>
 
-    <h2>Como é uma estrutura básica de um HTML?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+      <h3>Computadores Eletrônicos</h3>
+         <p>No século XX, com o desenvolvimento da eletrônica, os computadores passaram a usar componentes elétricos, como válvulas, 
+            transistores, circuitos integrados e microprocessadores, que aumentaram sua velocidade, capacidade e eficiência. 
+            Os computadores eletrônicos são divididos em quatro gerações, de acordo com os sistemas e ferramentas utilizados.
+         </p>
+            <ul>
+               <li><strong>Primeira Geração (1940-1959)</strong>: Os computadores dessa geração usavam válvulas eletrônicas, que eram 
+                  dispositivos que controlavam o fluxo de corrente elétrica. Esses computadores eram grandes, caros, consumiam muita energia 
+                  e geravam muito calor. Eles usavam cartões perfurados ou fitas magnéticas para armazenar dados e programas. 
+                  Alguns exemplos de computadores dessa geração são o <em>ENIAC</em>, o <em>EDVAC</em>, o <em>UNIVAC</em> e o <em>IBM 701</em>.
+               </li>
+               <li><strong>Segunda Geração (1959-1964)</strong>: Os computadores dessa geração usavam transistores, que eram dispositivos 
+                  semicondutores que podiam amplificar ou interromper sinais elétricos. Esses computadores eram menores, mais rápidos, 
+                  mais baratos e mais confiáveis do que os da primeira geração. Eles usavam fitas ou tambores magnéticos para armazenar 
+                  dados e programas. Alguns exemplos de computadores dessa geração são o <em>IBM 1401</em>, o <em>PDP-1</em> e o <em>LARC</em>.
+               </li>
+               <li><strong>Terceira Geração (1964-1971)</strong>: Os computadores dessa geração usavam circuitos integrados, que eram 
+                  dispositivos que continham vários transistores e outros componentes em uma única peça de silício. Esses computadores 
+                  eram ainda menores, mais rápidos, mais baratos e mais eficientes do que os da segunda geração. Eles usavam discos magnéticos 
+                  ou fitas para armazenar dados e programas. Alguns exemplos de computadores dessa geração são o <em>IBM 360</em>, 
+                  o <em>PDP-8</em> e o <em>DEC-10</em>.
+               </li>
+               <li><strong>Quarta Geração (1971-atualidade)</strong>: Os computadores dessa geração usam microprocessadores, que são circuitos integrados 
+                  que contêm todos os elementos de um processador em um único chip. Esses computadores são muito pequenos, rápidos, baratos e versáteis, 
+                  podendo ser usados para diversas finalidades. Eles usam discos rígidos, discos ópticos ou memórias flash para armazenar dados e 
+                  programas. Alguns exemplos de computadores dessa geração são o <em>Apple II</em>, o <em>IBM PC</em>, o <em>Macintosh</em>
+                   e o <em>Smartphone</em>.
+               </li>
+            </ul>
 
-    <h2>Entendendo a diferença entre listas ordenadas e não ordenadas</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+         <h3>Conclusão</h3>
+            <p>A história dos computadores mostra como a humanidade foi capaz de criar máquinas cada vez mais sofisticadas e inteligentes, 
+            que podem realizar tarefas complexas e variadas, que vão desde cálculos matemáticos até comunicação, entretenimento e arte. 
+            Os computadores são uma das maiores invenções da história, pois transformaram a sociedade e a cultura em diversos aspectos.
+         </p>
+         <p>Se você quiser saber mais sobre a história dos computadores, você pode consultar os seguintes sites:</p>
+         
+         <ul>
+            <h4>Origem: conversa com o Bing, 05/11/2023</h4>
+            <li>
+               <a href="https://www.todamateria.com.br/historia-e-evolucao-dos-computadores/"> 
+                  <p> (1) História do computador e a evolução dos computadores.</p>
+               </a>
+            </li>
+            <li>
+               <a href="https://escolaeducacao.com.br/historia-dos-computadores-linha-do-tempo-origem-e-evolucao/">
+                  <p>  (2) História dos Computadores - Linha do Tempo, Origem e Evolução. </p>
+               </a>
+            </li>
+            <li>
+               <a href="https://www.significados.com.br/evolucao-dos-computadores-geracoes-da-historia-da-informatica/">
+                  <p> (3) Evolução dos computadores: gerações da história da informática.</p>
+               </a>
+            </li>
+            <li>
+               <a href="https://www.portalsaofrancisco.com.br/historia-geral/historia-do-computador">
+                  <p> (4) História do Computador - Portal São Francisco.</p>  
+               </a>   
+            </li>
+         </ul>
+      
+      <p><a href="#Índice">Voltar ao Índice</a></p>
 
-    <h2>Links de referências</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Coloque links para outras páginas que falam sobre estes assuntos. Não esquece de que precisa abrir em outra aba/janela do navegador.</p>
-    <ul>
-        <li><a href="#">http://dio.me</a></li>
-        <li><a href="#">http://w3c.org</a></li>
-    </ul>
 
+   <h2 id="Clients">O que são <i>Clients</i>?</h2>
+      <p>Clients são termos usados para se referir a dispositivos ou programas que se conectam a um servidor para solicitar ou receber 
+         algum tipo de serviço. O servidor é o responsável por fornecer o serviço, enquanto o client é o que o consome. 
+         A relação entre client e servidor é chamada de modelo client-servidor, que é uma arquitetura de rede muito comum na internet e 
+         em outros sistemas distribuídos.
+      </p>
+
+   <h3>Tipos de Clients</h3>
+      <p>Existem diferentes tipos de clients, dependendo do tipo de serviço que eles solicitam ou recebem, do grau de dependência do 
+         servidor e da forma de comunicação. Alguns dos tipos mais comuns são:</p>
+      <ul>
+         <li><strong>Client de computador</strong>: É um dispositivo físico, como um computador pessoal, um smartphone ou um tablet, 
+            que se conecta a um servidor para acessar recursos compartilhados, como arquivos, impressoras, aplicativos ou internet. 
+            Um exemplo de client de computador é um laptop que se conecta a um servidor de rede local para acessar uma pasta compartilhada.
+         </li>
+         <li><strong>Client de software</strong>: É um programa ou aplicativo que se conecta a um servidor para executar alguma função 
+            específica, como enviar ou receber e-mails, navegar na web, reproduzir mídia ou jogar online. Um exemplo de client de software 
+            é um navegador web, como o Microsoft Edge, que se conecta a um servidor web para solicitar e exibir páginas da internet.
+         </li>
+         <li><strong>Client magro</strong>: É um tipo de client de software que depende quase totalmente do servidor para realizar o 
+            processamento dos dados, sendo responsável apenas pela interface gráfica com o usuário. Um exemplo de client magro é um 
+            aplicativo web, como o Gmail, que se conecta a um servidor de e-mail para gerenciar as mensagens do usuário.
+         </li>
+         <li><strong>Client grosso</strong>: É um tipo de client de software que realiza a maior parte do processamento dos dados localmente, 
+            sendo responsável tanto pela interface gráfica com o usuário quanto pela lógica de negócio. Um exemplo de client grosso é um 
+            aplicativo desktop, como o Microsoft Word, que se conecta a um servidor de armazenamento para salvar ou abrir documentos.
+         </li>
+         <li><strong>Client híbrido</strong>: É um tipo de client de software que realiza parte do processamento dos dados localmente e parte 
+            no servidor, sendo responsável pela interface gráfica com o usuário e por algumas funções da lógica de negócio. Um exemplo de 
+            client híbrido é um aplicativo móvel, como o WhatsApp, que se conecta a um servidor de mensagens para enviar e receber textos, 
+            imagens e vídeos, mas também realiza algumas operações no dispositivo do usuário, como criptografia, compressão e notificações.
+         </li>
+      </ul>
+
+   <h3>Conclusão</h3>
+      <p>Clients são elementos fundamentais para o funcionamento de muitos sistemas de informação, pois permitem a comunicação e a troca de 
+         dados entre diferentes dispositivos e programas. Os clients podem ser classificados de acordo com o tipo de serviço que eles solicitam 
+         ou recebem, o grau de dependência do servidor e a forma de comunicação. Alguns dos tipos mais comuns são os clients de computador, 
+         de software, magros, grossos e híbridos.
+      </p>
+      <p>Se você quiser saber mais sobre o que são clients, você pode consultar os seguintes sites:</p>
+      <ul>
+         <li><a href="https://conceito.de/cliente">
+            (1) Cliente - O que é, conceito e definição.</a>
+         </li>
+         <li><a href="https://awordmerchant.com/cliente">
+            (2) O que é cliente? »Sua definição e significado - Economia 2023.</a>
+         </li>
+         <li><a href="https://resultadosdigitais.com.br/vendas/gestao-de-clientes/">
+            (3) Gestão de clientes: o que é? Como fazer? Guia completo!.</a>
+         </li>
+      </ul>
+         <p><a href="#Índice">Voltar ao Índice</a></p>
+
+   <h2 id="Servers">O que são <i>Servers</i>?</h2>
+      <p>Um server, ou servidor, é um dispositivo ou programa que fornece serviços a outros dispositivos ou programas, chamados de clientes, 
+         através de uma rede de comunicação. Um server pode oferecer diversos tipos de serviços, como hospedagem de sites, armazenamento de dados, 
+         envio de e-mails, transmissão de mídia, execução de jogos, entre outros. Um server pode ser composto por um ou mais computadores físicos, 
+         que podem estar localizados em um mesmo lugar ou distribuídos em diferentes locais. Um server também pode ser virtual, ou seja, 
+         um software que simula um computador físico, usando recursos compartilhados de processamento, armazenamento e rede.
+      </p>
+   
+      <h2>Como funciona um server</h2>
+         <p>Um server funciona como um provedor de serviços, que atende às solicitações dos clientes, que são os consumidores desses serviços. O server e o cliente se comunicam através de um protocolo, que é um conjunto de regras que define como os dados são trocados entre eles. O protocolo mais usado na internet é o TCP/IP, que é dividido em camadas, cada uma com uma função específica. A camada de aplicação é a que define os protocolos específicos para cada tipo de serviço, como HTTP para páginas web, SMTP para e-mails, FTP para transferência de arquivos, etc. Um server pode suportar vários protocolos de aplicação, dependendo dos serviços que ele oferece.</p>
+         <p>Quando um cliente quer acessar um serviço, ele envia uma mensagem ao server, contendo o endereço do server, o protocolo de aplicação e os dados da solicitação. O endereço do server pode ser um nome de domínio, como www.google.com, ou um endereço de IP, como 172.217.28.132. O nome de domínio é mais fácil de lembrar, mas precisa ser convertido em endereço de IP para que o server possa ser localizado na rede. Essa conversão é feita por um serviço chamado DNS, que funciona como uma agenda telefônica da internet. O protocolo de aplicação é o que define o tipo de serviço que o cliente quer acessar, como HTTP para páginas web, SMTP para e-mails, FTP para transferência de arquivos, etc. Os dados da solicitação são as informações que o cliente quer enviar ou receber do server, como o nome da página web, o conteúdo do e-mail, o nome do arquivo, etc.</p>
+         <p>Quando o server recebe a mensagem do cliente, ele verifica se ele suporta o protocolo de aplicação solicitado e se ele tem os dados da solicitação disponíveis. Se sim, ele envia uma resposta ao cliente, contendo o endereço do cliente, o protocolo de aplicação e os dados da resposta. O endereço do cliente é o endereço de IP do dispositivo ou programa que enviou a solicitação. O protocolo de aplicação é o mesmo que o cliente usou na solicitação. Os dados da resposta são as informações que o server quer enviar ou receber do cliente, como o conteúdo da página web, a confirmação do e-mail, o conteúdo do arquivo, etc. Se não, ele envia uma mensagem de erro ao cliente, informando o motivo da falha.</p>
+      
+         <h2>Conclusão</h2>
+      <p>Um server é um dispositivo ou programa que fornece serviços a outros dispositivos ou programas, chamados de clientes, através de uma 
+         rede de comunicação. Um server pode oferecer diversos tipos de serviços, como hospedagem de sites, armazenamento de dados, 
+         envio de e-mails, transmissão de mídia, execução de jogos, entre outros. Um server funciona como um provedor de serviços, 
+         que atende às solicitações dos clientes, que são os consumidores desses serviços. O server e o cliente se comunicam através de um 
+         protocolo, que é um conjunto de regras que define como os dados são trocados entre eles.
+      </p>
+      
+      <p>Se você quiser saber mais sobre o que é um server, você pode consultar os seguintes sites:</p>
+      <ul>
+      <li><a href="https://www.soescola.com/glossario/o-que-e-cloud-server">
+         (1) O que é: Cloud Server — SÓ ESCOLA.</a>
+      </li>
+      <li><a href="https://www.oficinadanet.com.br/internet/32378-os-6-melhores-servidores-dns-publicos-de-2021">
+         (2) Melhor DNS: Os 5 servidores de DNS grátis - Oficina da Net.</a>
+      </li>
+      <li><a href="#">
+         O que é um servidor? - Dicionário de Informática</a>
+      </li>
+      <li><a href="#">
+         O que é um servidor? - TechTudo</a>
+      </li>
+      </ul>
+
+         <p><a href="#Índice">Voltar ao Índice</a></p>
+      
+   <h2 id="BasicStructuresHTML">Como é uma estrutura básica de um HTML?</h2>
+
+      <p>formatando em um código HTML. O resultado é o seguinte:</p>
+      
+      <h1>Estrutura básica de um HTML</h1>
+      <p>Uma estrutura básica de um HTML é um conjunto de tags e elementos que definem a forma e o conteúdo de uma página web. 
+      <br><br>
+      Uma estrutura básica de um HTML pode ser escrita da seguinte forma:</p>
+         <code>
+            <html>
+            <head>
+            <!-- Informações sobre o documento -->
+            <title>Essa é a estrutura básica de um HTML</title>
+            <meta charset="UTF-8">
+            <meta name="description" content="Um exemplo de uma estrutura básica de um HTML">
+            </head>
+            <body>
+            <!-- Conteúdo da página -->
+               <pre>
+                  <code>
+                     &lt;html&gt;
+                     &lt;head&gt;
+                     &lt;!-- Informações sobre o documento --&gt;
+                     &lt;/head&gt;
+                     &lt;body&gt;
+                     &lt;!-- Conteúdo da página --&gt;
+                     &lt;/body&gt;
+                     &lt;/html&gt;
+                  </code>
+               </pre>
+         </code>
+
+      <p>A tag &lt;html&gt; indica o início e o fim do documento HTML. Dentro dela, existem duas seções principais: </p>
+         <ul>
+            <li>
+               a tag &lt;head&gt;
+            </li>
+            <li>
+               a tag &lt;body&gt;
+            </li>
+         </ul>
+
+      <p><span>A tag &lt;head&gt;</span> contém informações sobre o documento, como o título, o idioma, os metadados e os links para 
+         arquivos externos, como CSS e JavaScript. Essas informações não são visíveis na página, mas são importantes para o seu 
+         funcionamento e para os mecanismos de busca.
+      </p>
+      <p>A tag &lt;body&gt; contém o conteúdo da página, como textos, imagens, links, vídeos, formulários e outros elementos. 
+         Essas informações são visíveis na página e podem ser formatadas e estilizadas com CSS e JavaScript.
+         </p>
+      <p>Para saber mais sobre a estrutura básica de um HTML, você pode consultar os seguintes sites:</p>
+         <ul>
+            <li><a href="#">Estrutura básica HTML – crie páginas HTML - Aprendendo a codar</a></li>
+            <li><a href="#">HTML básico - Aprendendo desenvolvimento web | MDN</a></li>
+            <li><a href="#">Estrutura Básica HTML: Um Guia Passo a Passo</a></li>
+         </ul>
+
+      <p><a href="#Índice">Voltar ao Índice</a></p>
+
+   <h2 id="DifferencesLists">Entendendo a diferença entre listas ordenadas e não ordenadas</h2>
+   <p>A diferença entre listas ordenadas e não ordenadas é que as listas ordenadas são usadas para indicar uma sequência ou uma ordem dos itens,
+      enquanto as listas não ordenadas são usadas para agrupar itens relacionados sem uma ordem específica. As listas ordenadas geralmente 
+      usam números, letras ou símbolos para marcar cada item, enquanto as listas não ordenadas usam apenas um símbolo, como um ponto ou um 
+      círculo. Por exemplo, se você quiser listar os passos para fazer um bolo, você pode usar uma lista ordenada, pois cada passo tem uma 
+      ordem lógica. Mas se você quiser listar os ingredientes do bolo, você pode usar uma lista não ordenada, pois a ordem dos ingredientes 
+      não é relevante.
+   </p>
+   
+   <p>No HTML, as listas ordenadas são criadas com a tag &lt;ol&gt;, que significa ordered list, e as listas não ordenadas são criadas com a 
+      tag &lt;ul&gt;, que significa unordered list. Dentro dessas tags, cada item da lista é marcado com a tag &lt;li&gt;, 
+      que significa list item. Por exemplo, uma lista ordenada de cores seria:
+   </p>
+      <pre>
+         <code>
+            &lt;ol&gt;
+               &lt;li&gt;Vermelho&lt;/li&gt;
+               &lt;li&gt;Laranja&lt;/li&gt;
+               &lt;li&gt;Amarelo&lt;/li&gt;
+               &lt;li&gt;Verde&lt;/li&gt;
+               &lt;li&gt;Azul&lt;/li&gt;
+               &lt;li&gt;Anil&lt;/li&gt;
+               &lt;li&gt;Violeta&lt;/li&gt;
+            &lt;/ol&gt;
+         </code>
+      </pre>
+   
+   <p>E uma lista não ordenada de frutas seria:</p>
+      <pre>
+         <code>
+            &lt;ul&gt;
+               &lt;li&gt;Banana&lt;/li&gt;
+               &lt;li&gt;Maçã&lt;/li&gt;
+               &lt;li&gt;Uva&lt;/li&gt;
+               &lt;li&gt;Morango&lt;/li&gt;
+               &lt;li&gt;Abacaxi&lt;/li&gt;
+            &lt;/ul&gt;
+         </code>
+      </pre>
+
+   <p>Para saber mais sobre listas ordenadas e não ordenadas em HTML, você pode consultar os seguintes sites:</p>
+   
+   <ul>
+      <li><a href="#">Trabalhando com listas ordenadas no HTML - DevMedia</a></li>
+      <li><a href="#">HTML: guia sobre listas - Programadores Deprê - Programação e Tecnologia</a></li>
+      <li><a href="#">Material Didático - IMD</a></li>
+   </ul>
+
+<p><a href="#Índice">Voltar ao Índice</a></p>
+
+   <h2 id="References">Links de referências</h2>
+      <ul>
+        <li><a href="http://dio.me">DIO.ME</a></li>
+        <li><a href="http://w3c.org">W3C.ORG</a></li>
+      </ul>
 </body>
 </html>
